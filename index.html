@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel=”preload” href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/zeroing.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/fee82c5cd9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="head">
+        <div class="container">
+            <div class="top-menu">
+                <div class="logo-contact">
+                    <img class="logo" src="image/header/logo.png" alt="LOGO">
+                    <div class="top-contact">
+                        <span><i class="fa fa-phone contacts-icon"></i>+7 (843) 259-54-54</span>
+                        <span><i class="fas fa-clock contacts-icon"></i>Пн - Сб: 10:00 - 20:00</span>
+                        <span><i class="fa fa-building contacts-icon"></i>г.Казань, Декабристов 83</span>
+                    </div>
+                </div>
+                <menu class="menu">
+                    <div class="ham">
+                        <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+                        <label for="checkbox4">
+                            <div class="hamburger hamburger4">
+                                <span class="bar bar1"></span>
+                                <span class="bar bar2"></span>
+                                <span class="bar bar3"></span>
+                                <span class="bar bar4"></span>
+                                <span class="bar bar5"></span>
+                            </div>
+                        </label>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="index.html">главная</a></li>
+                        <li><a href="services.html">услуги</a></li>
+                        <li><a href="faq.html">вопрос-ответ</a></li>
+                        <li><a href="#contact">контакты</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </div>
+    </header>
+    <section class="slider-top">
+        <div class="slider-header">
+            <div class="item-header">
+                <img src="image/header/0.jpg" alt="Первый слайд">
+                <div class="slideText">
+                    <h1>Сервисный центр «Компас»</h1>
+                    <p>Мы работаем с 2009 года. За все время мы зарекомендовали себя с лучшей стороны</p>
+                    <button class="btn"><a href="#contact">КОНТАКТЫ</a></button>
+                </div>
+            </div>
+            <div class="item-header hide">
+                <img src="image/header/1.jpg" alt="Второй слайд">
+                <div class="slideText">
+                    <h1>Сервисный центр «Компас»</h1>
+                    <p>Работаем с самой различной цифровой техникой — от часов до телевизоров</p>
+                    <button class="btn"><a href="#contact">КОНТАКТЫ</a></button>
+                </div>
+            </div>
+            <div class="item-header hide">
+                <img src="image/header/2.jpg" alt="Третий слайд">
+                <div class="slideText">
+                    <h1>Сервисный центр «Компас»</h1>
+                    <p>Проводим ремонт техники известных брендов, таких как Samsung, Apple, Xiaomi, LG, Sony и многие другие</p>
+                    <button class="btn"><a href="#contact">КОНТАКТЫ</a></button>
+                </div>
+                
+            </div>
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+        </div>
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-container">
+                <div class="work work-address">
+                    <h2>Адрес</h2>
+                    <p><i class="fa fa-building contacts-icon"></i>г. Казань, Декабристов 83</p>
+                </div>
+                <div class="work work-call">
+                    <h2>Связь с нами</h2>
+                    <div class="call">
+                        <a href="tel:88432595454"><i class="fa fa-phone contacts-icon"></i>+7 (843) 259-54-54</a><br>
+                        <a href="mailto:116man@mail.ru"><i class="fa fa-envelope contacts-icon"></i>116man@mail.ru</a><br>
+                        <a href="https://vk.com/ks_rus" target="_blank"><i class="fa fa-vk contacts-icon"></i>vk.com/ks_rus</a>
+                    </div>
+                </div>
+                <div class="work work-time">
+                    <h2>График работы</h2>
+                    <p><i class="fas fa-clock contacts-icon"></i>Пн - Сб: 10:00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <div class="about-title">
+                <h2>Сервисный центр цифровой техники «Компас»</h1>
+                <p>Наша компания работает с 2009 года. Основное направление Сервисного центра — диагностика и ремонт цифровой техники. При возникновении тех или иных проблем у Вашего компьютера, телевизора, телефона или любого другого устройства, рекомендуем обратиться в наш Центр в городе Казань ул. Декабристов 83. Наши специалисты проведут качественное обслуживание и ремонт вашей техники. Современное диагностическое оборудование позволит выявить самые сложные и трудные повреждения.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="services">
+                <div class="service">
+                    <div class="bord">
+                        <img src="image/service/pc.jpg" alt="PC">
+                    </div>
+                    <div class="service-text">
+                        <p>Ремонт компьютеров и ноутбуков</p>
+                        <button class="btn"><a href="services.html?id=1">подробнее</a></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="bord">
+                        <img src="image/service/tele.jpg" alt="PC">
+                    </div>
+                    <div class="service-text">
+                        <p>Ремонт телефонов и планшетов</p>
+                        <button class="btn"><a href="services.html?id=2">подробнее</a></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="bord">
+                        <img src="image/service/tv.jpg" alt="PC">
+                    </div>
+                    <div class="service-text">
+                        <p>Ремонт телевизоров и мониторов</p>
+                        <button class="btn"><a href="services.html?id=3">подробнее</a></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="bord">
+                        <img src="image/service/print.jpg" alt="PC">
+                    </div>
+                    <div class="service-text">
+                        <p>Ремонт струйных и лазерных принтеров, МФУ</p>
+                        <button class="btn"><a href="services.html?id=4">подробнее</a></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="bord">
+                        <img src="image/service/fill.jpg" alt="PC">
+                    </div>
+                    <div class="service-text">
+                        <p>Заправка картриджей</p>
+                        <button class="btn"><a href="services.html?id=5">подробнее</a></button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="bord">
+                        <img src="image/service/serv.jpg" alt="PC">
+                    </div>
+                    <div class="service-text">
+                        <p>Обслуживание компьютеров и оргтехники</p>
+                        <button class="btn"><a href="services.html?id=6">подробнее</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featured-service">
+        <div class="container">
+            <div class="services-item">
+                <div class="block_item block_item1">
+                    <div class="service-item"><img src="image/featured/diagnost.png" alt=""></div>
+                    <div class="service-item"><h3>Диагностика</h3></div>
+                    <div class="service-item"><p>Бесплатная диагностика вашей техники в день обращения</p></div>
+                </div>
+                <div class="block_item block_item2">
+                    <div class="service-item"><img src="image/featured/exp.png" alt=""></div>
+                    <div class="service-item"><h3>Опытные мастера</h3></div>
+                    <div class="service-item"><p>В нашем сервисе работают профессионалы высшего класса</p></div>
+                </div>
+                <div class="block_item block_item3">
+                    <div class="service-item"><img src="image/featured/sert.png" alt=""></div>
+                    <div class="service-item"><h3>Качество и гарантия</h3></div>
+                    <div class="service-item"><p>Осуществление гарантии на проделанную работу до 3-х лет</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2>Отзывы наших клиентов</h2>
+            <p>Мы следим за своей репутацией и к своей работе мы относимся с большой ответственностью. Мнение наших клиентов — залог нашего усовершенствования! Поэтому мы будем признательны, если вы тоже оставите о нас отзыв или вопрос на нашем сайте: постараемся откликнуться на все предложения и замечания.</p>
+            <div class="slider-reviews">
+                <div class="slider-reviews-item"><img src="image/rewievs/0.jpg" alt="rewievs"></div>
+                <div class="slider-reviews-item"><img src="image/rewievs/1.jpg" alt="rewievs"></div>
+                <div class="slider-reviews-item"><img src="image/rewievs/2.jpg" alt="rewievs"></div>
+                <div class="slider-reviews-item"><img src="image/rewievs/3.jpg" alt="rewievs"></div>
+                <div class="slider-reviews-item"><img src="image/rewievs/4.jpg" alt="rewievs"></div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="contacts-bottom">
+        <div class="container">
+            <div class="contact-container">
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8cb2c1003c7c7376111dd29dccc14646052d6db11fa36c328c630a49dacdb5b0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="mail">
+                    <h3>По любому вопросу вы можете связаться с нами по телефону,<br>в соц. сетях или оставить вопрос в форме ниже</h3>                    
+                    <form class="form-mail" action="#" method="POST">
+                        <p>Ваше имя</p>
+                        <input type="text" name="name" id="name" placeholder="Обязательно для заполнения" maxlength="36">
+                        <p>Номер телефона</p>
+                        <input type="text" name="phone" id="phone" placeholder="Достаточно тел. или почту" maxlength="36">
+                        <p>Электронная почта</p>
+                        <input type="text" name="mail" id="mail" placeholder="Достаточно тел. или почту" maxlength="36">
+                        <p>Сообщение</p>
+                        <textarea name="text" id="text" wrap placeholder="Обязательно для заполнения" maxlength="600"></textarea>
+                        <button class="btn btn_subm" type="button">Отправить</button>
+                        <div class="btn-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container-bottom">
+            <div class="container"></div>
+                <div class="contact-container-bottom-info">
+                    <div class="contacts-bottom contacts-bottom-addr">
+                        <h3>Адрес и график</h3>
+                        <p><i class="fa fa-building contacts-icon"></i>г. Казань, Декабристов 83</p>
+                        <p><i class="fas fa-clock contacts-icon"></i>Пн - Сб: 10:00 - 20:00</p>
+                    </div>
+                    <div class="contacts-bottom contacts-bottom-call">
+                        <h3>Связь</h3>
+                        <a href="tel:88432595454"><i class="fa fa-phone contacts-icon"></i>+7 (843) 259-54-54</a><br>
+                        <a href="mailto:116man@mail.ru"><i class="fa fa-envelope contacts-icon"></i>116man@mail.ru</a><br>
+                        <a href="https://vk.com/ks_rus" target="_blank"><i class="fa fa-vk contacts-icon"></i>vk.com/ks_rus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="scripts/slick.js"></script>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
