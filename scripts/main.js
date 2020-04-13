@@ -116,6 +116,7 @@ for (let anchor of anchors) {
             behavior: 'smooth',
             block: 'start'
         })
+        // document.getElementById(blockID).scrollIntoView(top)
     }
   })
 }

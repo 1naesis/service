@@ -543,7 +543,7 @@ header{
 .reviews{
     margin-top: -2px;
     text-align: center;
-    padding-bottom: 50px;   
+    padding-bottom: 20px;   
     background-color: #777777;
 }
 .reviews h2{
@@ -650,14 +650,14 @@ header{
 
 @media screen and (max-width: 900px){
     .contact-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .map{
         width: 80%;
+        margin-top: 50px;
     }
     .mail{
         width: 80%;
-        margin-top: 50px;
     }
 }
 @media screen and (max-width: 700px){
